@@ -1,0 +1,9 @@
+{% extends 'nav.html' %}
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.p}}
+        <h2> Do you want to delete for sure? </h2>
+        <button>Confirm</button>
+    </form>
+{% endblock %}

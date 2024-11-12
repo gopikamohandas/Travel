@@ -1,0 +1,8 @@
+{% extends 'nav.html' %}
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+            {{form.as_table}}<br><br>
+            <button>Save</button>
+    </form>
+{% endblock %}
